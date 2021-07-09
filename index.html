@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ABetterToDoList</title>
+  </head>
+  <body>
+    <main id="container">
+      <h1>A Better To Do List</h1>
+      <form id="form">
+        <h3>Enter a Task to be Completed</h3>
+        <input type="text" id="info" placeholder="Name of task..." />
+        <label for="input"></label>
+        <h3>Check priority level</h3>
+        <section id="radio-section">
+          <fieldset>
+            <input
+              type="radio"
+              name="inputRadio"
+              value="high"
+              id="high-radio"
+              class="radio"
+            />
+            <label for="input-radio"> High </label>
+            <input
+              type="radio"
+              name="inputRadio"
+              value="medium"
+              id="medium-radio"
+              class="radio"
+            />Medium
+            <label for="input-radio"> </label>
+            <input
+              type="radio"
+              name="inputRadio"
+              value="low"
+              id="low-radio"
+              class="radio"
+            />Low
+            <label for="input-radio"> </label>
+          </fieldset>
+        </section>
+
+        <button id="btn">Add Task</button>
+      </form>
+
+      <article id="lists-container">
+        <section class="list high-list">
+          <h2>High priority</h2>
+          <ul id="red"></ul>
+        </section>
+
+        <section class="list medium-list">
+          <h2>Medium priority</h2>
+          <ul id="yellow"></ul>
+        </section>
+
+        <section class="list low-list">
+          <h2>Low priority</h2>
+          <ul id="green"></ul>
+        </section>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
